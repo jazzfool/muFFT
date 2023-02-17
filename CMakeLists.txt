@@ -59,7 +59,7 @@ if (CMAKE_SYSTEM_PROCESSOR MATCHES "(x86)|(X86)|(amd64)|(AMD64)")
     endif()
 endif()
 
-if (NOT MSVC)
+if (NOT WIN32)
     target_link_libraries(muFFT PRIVATE m)
 endif()
 
